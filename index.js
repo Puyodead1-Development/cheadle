@@ -9,6 +9,16 @@ let last = 0;
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  console.log(
+    client.guilds
+      .get("473908597470920714")
+      .channels.get("513486878146691086")
+      .setTopic("Ready!")
+  );
+  client.guilds
+    .get("473908597470920714")
+    .channels.get("513486878146691086")
+    .send("System Ready!");
   cheadle = cheadles;
 });
 
