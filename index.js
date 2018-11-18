@@ -18,6 +18,7 @@ client.on("ready", () => {
     .channels.get("513486878146691086")
     .send("System Ready!");
   cheadle = cheadles;
+  client.user.setActivity("Don Cheadle!", { type: "WATCHING" });
 });
 
 client.on("message", (msg) => {
